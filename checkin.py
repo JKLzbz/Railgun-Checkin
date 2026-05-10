@@ -26,13 +26,13 @@ TIMEOUT = 10
 
 
 def push_deer(sckey: str, title: str, text: str):
-    """推送消息到 PushDeer"""
+    """推送消息到 PushDeer"""
     if sckey:
         PushDeer(pushkey=sckey).send_text(title, desp=text)
 
 
 def push_serverchan(sendkey: str, title: str, content: str):
-    """推送消息到 Server 酱 (Turbo 版)"""
+    """推送消息到 Server 酱 (Turbo 版)"""
     if not sendkey:
         return
     
@@ -59,7 +59,7 @@ def push_serverchan(sendkey: str, title: str, content: str):
 
 
 def push_all(sendkey_deer: str, sendkey_sc: str, title: str, content: str):
-    """推送到所有配置的服务"""
+    """推送到所有配置的服务"""
     # PushDeer 推送
     if sendkey_deer:
         push_deer(sendkey_deer, title, content)
