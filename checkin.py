@@ -11,7 +11,7 @@ CHECKIN_URL = "https://railgun.info/api/user/checkin"
 STATUS_URL = "https://railgun.info/api/user/status"
 
 HEADERS_BASE = {
-    "origin": "https://railgun.info",
+    "origin": "https://railgun.info",
     "referer": "https://railgun.info/console/checkin",
     "user-agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
