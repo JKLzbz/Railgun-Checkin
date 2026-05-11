@@ -25,6 +25,4 @@ jobs:
       - name: Run checkin
         run: python checkin.py
         env:
-          SENDKEY: ${{ secrets.SENDKEY }}
-          SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
           COOKIES: ${{ secrets.COOKIES }}
